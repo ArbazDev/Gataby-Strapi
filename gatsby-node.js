@@ -63,7 +63,7 @@ exports.createPages = async function ({ actions, graphql }) {
         title
         image {
           localFile {
-            childrenImageSharp {
+            childImageSharp {
               gatsbyImageData
             }
           }
@@ -137,7 +137,7 @@ exports.createPages = async function ({ actions, graphql }) {
     const sluggish = node.Slug
     actions.createPage({
       path: '/portfolio/' + sluggish,
-      component: path.resolve('./src/pages/portfolio-details.js'),
+      component: path.resolve('../src/pages/portfolio-details.js'),
       context: {
         slug: sluggish,
         data: node

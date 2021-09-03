@@ -7,9 +7,7 @@ import RelatedPortfolio from "@/components/related-portfolio";
 import MenuContextProvider from "@/context/menu-context";
 import SearchContextProvider from "@/context/search-context";
 import HeaderOne from "@/components/header-one";
-import ModalPortfolio from "@/components/portfoliomodal";
-// import { graphql , useStaticQuery } from "gatsby";
-// import PortfolioOne from "src/components/portfolio-one";
+
 
 
 const PortfolioDetailsPage = (data) => {
@@ -21,9 +19,6 @@ const PortfolioDetailsPage = (data) => {
           <HeaderOne />
           <PageBanner title="Portfolio Details" name="Portfolio" />
           <ProtfolioDetails data = {data}/>
-          {/* <ModalPortfolio data = {data}/> */}
-          {/* <PortfolioOne/>  */}
-          {/* <RelatedPortfolio /> */}
           <Footer />
         </Layout>
       </SearchContextProvider>
