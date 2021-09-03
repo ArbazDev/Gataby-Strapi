@@ -136,7 +136,7 @@ exports.createPages = async function ({ actions, graphql }) {
     console.log(node);
     const sluggish = node.Slug
     actions.createPage({
-      path: '/portfolio/' + sluggish,
+      path: '/portfolio-details/' + sluggish,
       component: path.resolve('../src/pages/portfolio-details.js'),
       context: {
         slug: sluggish,
